@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+    <title>play</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-info text-dark bg-opacity-25">
+            <div class="container-fluid col-10">
+                <span class="navbar-brand mb-0 h1"
+                    style="font-family:Source Code Pro, monospace; font-size: 40px;">&#9994
+                    &#9995 &#9996 &#129295 &#128406
+                    Digital Futures Arcade &#9994 &#9995
+                    &#9996 &#129295 &#128406</span>
+            </div>
+        </nav>
+    </header>
+    <main class="container text-center mb-5 pb-5">
+        <div class="mt-5 pt-5 pb-5">
+            <h1 style="font-size: 60px;">Players! Make your choice!</h1>
+        </div>
+        <form action="/result" method="post">
+            <div class="card border-white">
+                <div class="card-body">
+                    <h5 class="card-title display-6">
+                        <%= p1name %>,
+                    </h5>
+                    <label for="choiceP1" style="font-size: 25px;">Take your pick:</label>
+                    <select name="choiceP1" id="choiceP1" style="font-size: 20px;">
+                        <option value="rock">rock</option>
+                        <option value="paper">paper</option>
+                        <option value="scissors">scissors</option>
+                        <option value="lizard">lizard</option>
+                        <option value="spock">spock</option>
+                    </select>
+                </div>
+            </div>
+            <div class="card border-white">
+                <div class="card-body">
+                    <h6 class="card-title pt-5" style="font-size: 20px;"><em>Now scroll down...</em></h6>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+            </div>
+            <div class="card border-white">
+                <div class="card-body">
+                    <h5 class="card-title display-6">
+                        <%= p2name %>,
+                    </h5>
+                    <label for="choiceP2" style="font-size: 25px;">Take your pick:</label>
+                    <select name="choiceP2" id="choiceP2" style="font-size: 20px;">
+                        <option value="rock">rock</option>
+                        <option value="paper">paper</option>
+                        <option value="scissors">scissors</option>
+                        <option value="lizard">lizard</option>
+                        <option value="spock">spock</option>
+                    </select>
+                </div>
+            </div>
+            <input style="font-size: 25px;" type="submit" class="btn btn-info" value="Go!" />
+        </form>
+    </main>
+    <footer class="bg-info text-dark bg-opacity-10 mb-0 pb-2">
+        <div class="container-fluid col-6 text-center pt-3">
+            <p><em>RPS challenge, by Marta Zaragoza Hidalgo</em></p>
+        </div>
+    </footer>
+</body>
+
+</html>
